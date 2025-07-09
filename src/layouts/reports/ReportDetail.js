@@ -526,10 +526,12 @@ function ReportDetail() {
               >
                 <MDTypography variant="h5" color="white">
                   {isInherigene
-                    ? `Case Detail (${record?.VariantsToBeIdentified.split(
+                    ? `Case Details (${record?.VariantsToBeIdentified.split(
                         ","
                       ).join(" , ")})`
-                    : `Project Detail `}
+                    : `Project Details  (${record?.VariantsToBeIdentified.split(
+                        ","
+                      ).join(" , ")}) `}
                 </MDTypography>
                 <MDButton
                   color={"info"}

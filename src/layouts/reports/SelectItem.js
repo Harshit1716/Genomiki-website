@@ -28,7 +28,7 @@ function CasesList() {
   useEffect(() => {
     const handler = (e) => {
       if (e.detail && e.detail.reportId) {
-        navigate(`/reports/${e.detail.reportId}/detail/${e.detail.reportId}`);
+        navigate(`/reports/${e.detail.reportId}/details/${e.detail.reportId}`);
       }
     };
     window.addEventListener("navigate-to-item-detail", handler);

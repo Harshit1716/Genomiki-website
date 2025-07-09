@@ -38,7 +38,9 @@ const Cases = createSlice({
       state.status = action.payload;
     },
     deleteFile: (state, action) => {
-      state.files = state.files.filter((file) => file.id !== action.payload);
+      state.files = state.files.filter(
+        (file) => file.sampleID !== action.payload
+      );
     },
     setError: (state, action) => {
       state.error = action.payload;

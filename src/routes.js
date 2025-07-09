@@ -71,7 +71,7 @@ const routes = [
     type: "route",
     name: "Report Detail",
     key: "report-detail",
-    route: "/reports/:reportId/detail/:itemId",
+    route: "/reports/:reportId/details/:itemId",
     component: <ReportDetail />,
     noCollapse: true,
   },

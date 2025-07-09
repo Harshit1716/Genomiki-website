@@ -3,7 +3,7 @@ import MDTypography from "components/MDTypography";
 import MDBadge from "components/MDBadge";
 import DeleteIcon from "@mui/icons-material/Delete";
 import { store } from "store/store";
-import { deleteFile } from "store/fileUploadSlice";
+import { deleteFile } from "store/CasesSlice";
 import { getUniqueProjectFiles } from "utils/getUniqueProjectFiles";
 
 export default function authorsTableData(files) {
@@ -77,7 +77,7 @@ export default function authorsTableData(files) {
       ),
       createdDate: (
         <MDTypography variant="caption" color="text" fontWeight="medium">
-          23/04/18
+          {item.createdAt}
         </MDTypography>
       ),
       action: (

@@ -42,7 +42,7 @@ function Projects() {
               done
             </Icon>
             <MDTypography variant="button" fontWeight="regular" color="text">
-              &nbsp;<strong>Latest 7 cases.</strong>
+              &nbsp;<strong>Latest cases.</strong>
             </MDTypography>
           </MDBox>
         </MDBox>

@@ -34,7 +34,14 @@ function Breadcrumbs({ icon, title, route, light }) {
   );
 
   const getName = (name) => {
-    return name == "create-cases" && !isInherigene ? "Create Project" : name;
+    console.log(name);
+    return name == "create-cases" && !isInherigene
+      ? "Create Project"
+      : name == "tables"
+      ? isInherigene
+        ? "Cases"
+        : "Project"
+      : name;
   };
 
   return (
