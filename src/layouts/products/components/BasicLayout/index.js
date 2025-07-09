@@ -58,7 +58,7 @@ function BasicLayout({ children }) {
         width="100%"
         height="100vh"
         // maxHeight={"100vh"}
-        overflow={"hidden"}
+        // overflow={"hidden"}
         mx="auto"
       >
         <Grid

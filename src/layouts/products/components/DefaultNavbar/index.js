@@ -36,7 +36,8 @@ function DefaultNavbar({ transparent, light, action }) {
   const [mobileNavbar, setMobileNavbar] = useState(false);
   const [mobileView, setMobileView] = useState(false);
 
-  const openMobileNavbar = ({ currentTarget }) => setMobileNavbar(currentTarget.parentNode);
+  const openMobileNavbar = ({ currentTarget }) =>
+    setMobileNavbar(currentTarget.parentNode);
   const closeMobileNavbar = () => setMobileNavbar(false);
 
   const dispatch = useDispatch();
@@ -109,7 +110,12 @@ function DefaultNavbar({ transparent, light, action }) {
             <img src={LOGO} alt="Brand" height={50} />
           </MDBox>
         </MDBox>
-        <MDBox color="inherit" display={{ xs: "none", lg: "flex" }} ml={0} p={0}>
+        <MDBox
+          color="inherit"
+          display={{ xs: "none", lg: "flex" }}
+          ml={0}
+          p={0}
+        >
           <img src={TextLogo} alt="Brand" height={80} />
         </MDBox>
         <MDBox
@@ -137,10 +143,10 @@ function DefaultNavbar({ transparent, light, action }) {
           sx={{ cursor: "pointer" }}
           onClick={openMobileNavbar}
         >
-          <Icon fontSize="default">{mobileNavbar ? "close" : "menu"}</Icon>
+          {/* <Icon fontSize="default">{mobileNavbar ? "close" : "menu"}</Icon> */}
         </MDBox>
       </MDBox>
-      {mobileView && <DefaultNavbarMobile open={mobileNavbar} close={closeMobileNavbar} />}
+      {/* {mobileView && <DefaultNavbarMobile open={mobileNavbar} close={closeMobileNavbar} />} */}
     </Container>
   );
 }

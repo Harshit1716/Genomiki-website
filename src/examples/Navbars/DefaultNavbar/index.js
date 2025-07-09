@@ -154,12 +154,12 @@ function DefaultNavbar({ transparent, light, action, onClick }) {
           sx={{ cursor: "pointer" }}
           onClick={openMobileNavbar}
         >
-          <Icon fontSize="default">{mobileNavbar ? "close" : "menu"}</Icon>
+          {/* <Icon fontSize="default">{mobileNavbar ? "close" : "menu"}</Icon> */}
         </MDBox>
       </MDBox>
-      {mobileView && (
+      {/* {mobileView && (
         <DefaultNavbarMobile open={mobileNavbar} close={closeMobileNavbar} />
-      )}
+      )} */}
     </Container>
   );
 }

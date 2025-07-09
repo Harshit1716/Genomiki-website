@@ -27,11 +27,12 @@ function SidenavCollapse({ icon, name, active, ...rest }) {
   const {
     miniSidenav,
     transparentSidenav,
-    whiteSidenav,
+
     darkMode,
     sidenavColor,
   } = controller;
 
+  const whiteSidenav = true;
   const { isInherigene } = useSelector((state) => state.login);
   return (
     <ListItem component="li">

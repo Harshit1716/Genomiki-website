@@ -33,7 +33,7 @@ const ResponsiveCard = ({
       sx={{
         width: isMobile ? "90vw" : 370,
         margin: "auto",
-        // mt: isMobile ? (isFirst ? 10 : 4) : 6,
+        mt: isMobile ? (isFirst ? 14 : 4) : 6,
         borderRadius: 3,
         boxShadow: 4,
         display: "flex",
