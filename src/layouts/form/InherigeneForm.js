@@ -325,6 +325,10 @@ function Form() {
       assembly: "",
       additionalInfo: "",
     });
+    setmetaDataFiles([]);
+    setGeneListFiles([]);
+    setBedFiles([]);
+    setPatientDataFiles([]);
   };
 
   return (
@@ -424,6 +428,7 @@ function Form() {
                               onChange={handleChange}
                               style={{
                                 width: "100%",
+                                appearance: "none",
                                 padding: 12,
                                 borderRadius: 8,
                                 border: "1.5px solid #b2bec3",
@@ -883,6 +888,7 @@ function Form() {
                               border: "1.5px solid #b2bec3",
                               background: "#fff",
                               fontSize: 16,
+                              appearance: "none",
                               boxShadow: "0 1px 2px rgba(0,0,0,0.03)",
                               transition: "border-color 0.2s",
                             }}

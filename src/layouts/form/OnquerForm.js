@@ -318,6 +318,10 @@ function Form() {
       assembly: "",
       additionalInfo: "",
     });
+    setmetaDataFiles([]);
+    setGeneListFiles([]);
+    setBedFiles([]);
+    setPatientDataFiles([]);
   };
 
   return (
@@ -706,6 +710,7 @@ function Form() {
                               fontSize: 16,
                               boxShadow: "0 1px 2px rgba(0,0,0,0.03)",
                               transition: "border-color 0.2s",
+                              appearance: "none",
                             }}
                             required
                           >
