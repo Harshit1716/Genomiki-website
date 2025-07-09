@@ -66,7 +66,11 @@ function SidenavCollapse({ icon, name, active, ...rest }) {
 
         <ListItemText
           primary={
-            name == "Create Cases" && !isInherigene ? "Create Project" : name
+            name == "Create Cases" && !isInherigene
+              ? "Create Project"
+              : name == "Cases" && !isInherigene
+              ? "Projects"
+              : name
           }
           sx={(theme) =>
             collapseText(theme, {

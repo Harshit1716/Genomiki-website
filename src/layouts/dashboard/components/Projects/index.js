@@ -11,10 +11,13 @@ import DataTable from "examples/Tables/DataTable";
 
 // Data
 import data from "layouts/dashboard/components/Projects/data";
+import { useState } from "react";
+import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 
 function Projects() {
   const navigate = useNavigate();
+  const { isInherigene } = useSelector((state) => state.login);
   const onClick = (item) => {
     navigate(`/reports/${item.sampleID}/list`);
   };
@@ -29,7 +32,7 @@ function Projects() {
       >
         <MDBox>
           <MDTypography variant="h6" gutterBottom>
-            Cases
+            {isInherigene ? "Cases" : "Project"}
           </MDTypography>
           <MDBox display="flex" alignItems="center" lineHeight={0}>
             <Icon
@@ -42,7 +45,8 @@ function Projects() {
               done
             </Icon>
             <MDTypography variant="button" fontWeight="regular" color="text">
-              &nbsp;<strong>Latest cases.</strong>
+              &nbsp;
+              <strong>Latest {isInherigene ? "cases" : "projects"}.</strong>
             </MDTypography>
           </MDBox>
         </MDBox>

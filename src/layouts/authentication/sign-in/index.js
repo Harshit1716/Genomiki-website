@@ -58,7 +58,11 @@ function Basic() {
     setEmailError(emailErr);
     setPasswordError(passErr);
 
-    if (Email === "user1@diagnosticlab.com" && error !== "No user found") {
+    if (
+      Email === "user1@diagnosticlab.com" &&
+      Password == "Password@123" &&
+      error !== "No user found"
+    ) {
       if (emailErr || passErr) return;
       await dispatch(
         onLogin({
